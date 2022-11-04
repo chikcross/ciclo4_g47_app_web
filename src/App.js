@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navegacion from './Componentes/Navegacion';
+
+import Cargar from './Componentes/Cargar';
 
 function App() {
   return (
     <div className="App">
+      
+      <Navegacion titulo='Tarjetas' enlace4h={true}/>
+      <Cargar/>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Leer React
         </a>
       </header>
     </div>
