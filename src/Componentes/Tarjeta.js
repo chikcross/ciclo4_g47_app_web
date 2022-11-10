@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 
 
 class Tarjeta extends Component {
+    constructor(){
+        super();
+        this.state ={
+            titulo:''
+        }
+
+    }
 
     editar(){
         alert('Editando...');
@@ -20,7 +27,11 @@ class Tarjeta extends Component {
                         <p className="card-text">{this.props.descripcion}</p>
                         <span className='bg-danger rounded-pill'>Prioridad: {this.props.prioridad}</span>
                         <br/>
-                        <button formTarget='#formulario1' className="btn btn-primary border mx-auto me-2">Editar</button>
+                        <span className='bg-success rounded-pill'>Responsable: {this.props.responsable}</span>
+                        <br/>
+                        <span className='bg-primary rounded-pill'>Tiempo: {this.props.numero} minutos</span>
+                        <br/>
+                        <button formTarget='#formulario1' className="btn btn-primary border mx-auto me-2" onClick={this.editar}>Editar</button>
                         <button className="btn btn-danger border mx-auto ">Eliminar</button>
                     </div>
                 </div>

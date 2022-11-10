@@ -11,7 +11,7 @@ class Cargar extends Component {
     render() {
         let mostrar = this.state.Datos.map((dato)=>{
             return(
-                <Tarjeta titulo={dato.titulo} descripcion={dato.descripcion} numero= {dato.numero} imagen={dato.imagen} prioridad={dato.prioridad}/>
+                <Tarjeta titulo={dato.titulo} descripcion={dato.descripcion} numero= {dato.numero} imagen={dato.imagen} prioridad={dato.prioridad} responsable={dato.responsable}/>
                      
 
              
